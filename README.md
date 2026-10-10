@@ -27,7 +27,7 @@ End-to-end SOC incident response analyzing network PCAP exfiltration in Wireshar
 Network traffic inspection was performed on captured packet trace `traffic.pcap` using Wireshark on Security Onion:
 - **Communication Flow:** Identified sustained TCP sessions established between internal host `10.10.1.5` and external IP `75.30.5.55`.
 - **Payload Inspection:** Following the TCP Stream revealed raw ASCII, unencrypted HTTP transmission of sensitive internal records without cryptographic controls.
-- **Data Identification:** Extracted customer names, addresses, credit card numbers, and Social Security numbers being exfiltrated in cleartext.
+- **Data Identification:** Extracted customer names, addresses, and Social Security numbers being exfiltrated in cleartext.
 
 ![Network PCAP Exfiltration Analysis](images/01-pcap-exfiltration.png)
 
